@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page not found</title>
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+
+    <header class="header">
+      <div class="container header__inner">
+        <div class="brand" aria-label="Site">
+          <span class="brand__dot" aria-hidden="true"></span>
+          <span class="brand__text">Afzal Hossan</span>
+        </div>
+        <nav class="nav" aria-label="Primary">
+          <a href="/">Home</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content" class="main">
+      <section class="section">
+        <div class="container">
+          <div class="card">
+            <h1>404</h1>
+            <p class="muted">This page doesn’t exist.</p>
+            <div class="actions">
+              <a class="btn btn--primary" href="/">Go home</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="muted">© <span id="y"></span> Afzal Hossan</p>
+        <a class="muted" href="/">Home</a>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("y").textContent = String(
+        new Date().getFullYear()
+      );
+    </script>
+  </body>
+</html>

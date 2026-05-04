@@ -1,33 +1,85 @@
-# AfzalHossan-2005021.github.io
+# Afzal Hossan Portfolio (Next.js)
 
-Static GitHub Pages site for **https://afzal-hossan.me**.
+Premium, recruiter-ready personal portfolio built with:
 
-## Files
+- Next.js (App Router)
+- React
+- Tailwind CSS
+- Framer Motion
+- Lucide React icons
 
-- `index.html` – homepage
-- `styles.css` – site styles
-- `404.html` – not found page
-- `CNAME` – custom domain (`afzal-hossan.me`)
+This version is generated from public GitHub profile/repository data for `AfzalHossan-2005021`, while keeping unknown details as explicit placeholders.
 
-## Preview locally
+## Local Development
 
-If you have Python installed:
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Run the dev server:
+   ```bash
+   npm run dev
+   ```
+3. Open:
+   `http://localhost:3000`
 
-1. Open a terminal in this folder
-2. Run `python -m http.server 5500`
-3. Visit `http://localhost:5500`
+## Production Build
 
-## Publish (GitHub Pages)
+```bash
+npm run build
+npm run start
+```
 
-1. Push to GitHub
-2. In your repo: **Settings → Pages**
-3. Set **Source** to the `main` branch (root)
-4. Ensure the custom domain is `afzal-hossan.me` (the `CNAME` file is already in the repo)
+## Deployment (Vercel)
 
-## Customize
+1. Push this repository to GitHub.
+2. Import the repo in Vercel.
+3. Framework preset: `Next.js` (auto-detected).
+4. Build command: `npm run build` (default).
+5. Output: `.next` (handled automatically by Vercel).
+6. Deploy.
 
-Edit `index.html` and replace:
+## Deployment (GitHub Pages with your existing custom domain)
 
-- Social links (GitHub/LinkedIn)
-- Email address
-- Project cards and skills
+This project is configured for static export (`output: "export"`), so you can keep using your existing domain `https://afzal-hossan.me/` on GitHub Pages as well.
+
+Automatic deploy is configured via GitHub Actions in:
+`/.github/workflows/deploy-pages.yml`
+
+One-time repo settings:
+
+1. Go to `Repository Settings -> Pages`.
+2. Set `Source` to `GitHub Actions`.
+3. In `Custom domain`, set `afzal-hossan.me` and save.
+4. Ensure your DNS for `afzal-hossan.me` points to GitHub Pages (A/AAAA or CNAME records as appropriate).
+
+After this setup, every push to `main` will rebuild and publish automatically.
+
+## Content Source
+
+Primary structured content is in:
+
+- `data/portfolio.ts`
+
+Update this file to edit:
+
+- hero copy
+- skills
+- featured projects
+- timeline entries
+- contact links
+
+## Placeholders You Should Fill
+
+- `profile.resumeUrl` in `data/portfolio.ts`
+- `contact.resumeUrl` in `data/portfolio.ts`
+- optional testimonials (currently intentionally placeholder-only)
+- professional experience details (currently explicit placeholder card)
+
+## Accessibility and UX Notes
+
+- Dark mode default, light mode toggle enabled
+- Keyboard-friendly focus rings and skip link
+- Responsive layout for desktop/tablet/mobile
+- Smooth scrolling + section reveal animations
+- Truthful copy with no fabricated jobs/degrees/certifications/testimonials

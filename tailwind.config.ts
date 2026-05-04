@@ -34,8 +34,8 @@ const config: Config = {
         }
       },
       fontFamily: {
-        heading: ["var(--font-sora)", "ui-sans-serif", "system-ui"],
-        body: ["var(--font-manrope)", "ui-sans-serif", "system-ui"]
+        heading: ["Sora", "Manrope", "ui-sans-serif", "system-ui"],
+        body: ["Manrope", "Avenir Next", "ui-sans-serif", "system-ui"]
       },
       boxShadow: {
         glow: "0 0 60px -15px hsl(var(--primary) / 0.45)"

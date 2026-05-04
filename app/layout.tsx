@@ -1,18 +1,7 @@
 import type { Metadata, Viewport } from "next";
-import { Manrope, Sora } from "next/font/google";
 
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
-
-const sora = Sora({
-  variable: "--font-sora",
-  subsets: ["latin"]
-});
-
-const manrope = Manrope({
-  variable: "--font-manrope",
-  subsets: ["latin"]
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://afzal-hossan.me"),
@@ -61,7 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${sora.variable} ${manrope.variable} bg-background`}>
+      <body className="bg-background">
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

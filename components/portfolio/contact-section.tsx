@@ -6,7 +6,7 @@ import {
   Linkedin,
   Mail,
   MapPin,
-  SendHorizonal
+  SendHorizontal
 } from "lucide-react";
 import Link from "next/link";
 
@@ -111,7 +111,7 @@ export function ContactSection() {
               className="inline-flex w-full cursor-not-allowed items-center justify-center gap-2 rounded-xl bg-primary/70 px-4 py-3 text-sm font-semibold text-primary-foreground opacity-60"
               title="Contact form backend placeholder"
             >
-              <SendHorizonal className="h-4 w-4" />
+              <SendHorizontal className="h-4 w-4" />
               Send Message (placeholder)
             </button>
           </div>
